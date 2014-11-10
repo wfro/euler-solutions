@@ -1,18 +1,3 @@
-// These specs require jasmine-node, which can be installed via the npm
-// (node package manager).  To run specs from the command line:
-//    $ jasmine-node euler_1_spec.js
-//
-// If we list all the natural numbers below 10 that are multiples of 3 or 5, we
-// get 3, 5, 6 and 9. The sum of these multiples is 23.
-//
-// Find the sum of all the multiples of 3 or 5 below 1000.
-
-describe('sum of multiples', function() {
-  it('should correctly compute the sum', function() {
-    expect(sumOfMultiples(10)).toEqual(23);
-  });
-});
-
 // Another classic imperative approach.  Here we:
 // Define a function sumOfMultiles that takes a single argument
 // Initialize a variable that will store our running total

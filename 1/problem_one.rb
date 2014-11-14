@@ -4,21 +4,7 @@
 # get 3, 5, 6 and 9. The sum of these multiples is 23.
 #
 # Find the sum of all the multiples of 3 or 5 below 1000.
-
-gem 'minitest', '~>5.4.2'
-require 'minitest/autorun'
-require 'minitest/pride' # pretty colors
-
-class ProblemOneTest < Minitest::Test
-  def test_it_computes_the_right_sum
-    assert_equal 23, sum_of_multiples(10)
-  end
-
-  def test_it_computes_the_right_sum_with_reduce
-    assert_equal 23, sum_of_multiples_reduce(10)
-  end
-end
-
+#
 # This example is classic imperative programming, using the simpler
 # looping construct #each (in languages like C you'd use a for loop)
 # to build up a variable's value which we then return from the function.

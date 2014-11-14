@@ -11,9 +11,8 @@ def fib(n)
   fib = [1, 2]
 
   loop do
-    next_val = fib[i] + fib[i + 1]
     break if next_val > n
-    fib << next_val
+    fib << fib[i] + fib[i + 1]
     i += 1
   end
 
@@ -27,3 +26,4 @@ def sum_of_even_fibs
   end
 end
 
+puts sum_of_even_fibs

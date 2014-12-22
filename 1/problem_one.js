@@ -13,3 +13,4 @@ function sumOfMultiples(up_to) {
 
   return total;
 }
+

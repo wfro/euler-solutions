@@ -3,6 +3,7 @@
 //
 // Find the largest palindrome made from the product of two 3-digit numbers.
 
+
 // So this is a first solution to problem 4.  Looking to reudce the number
 // of iterations needed, get rid of nested conditionals if at all possible, just
 // generally finding a clear solution with less code.
@@ -36,4 +37,4 @@ function assignStartingNums(numDigits) {
   return parseInt(num);
 }
 
-console.log(largestPalindrome(3));
+console.log(largestPalindrome(1));

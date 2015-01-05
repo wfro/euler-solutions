@@ -6,24 +6,18 @@
 # By considering the terms in the Fibonacci sequence whose values do not exceed
 # four million, find the sum of the even-valued terms.
 
-def fib(n)
-  i = 0
+def generate_fib
   fib = [1, 2]
 
-  loop do
-    break if next_val > n
-    fib << fib[i] + fib[i + 1]
-    i += 1
+  while (fib[-1] + fib[-2]) < 4000000
+    fib << fib[-1] + fib[-2]
   end
 
   fib
 end
 
 def sum_of_even_fibs
-  fib_sequence = fib(4000000)
-  fib_sequence.reduce(0) do |sum, n|
-    n % 2 == 0 ? sum + n : sum
-  end
+  generate_fib.reduce(0) { |sum, n| n % 2 == 0 ? sum + n : sum }
 end
 
 puts sum_of_even_fibs

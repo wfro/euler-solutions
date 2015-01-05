@@ -20,8 +20,8 @@ def fib(n)
 end
 
 def sum_of_even_fibs
-  fib_list = fib(4000000)
-  fib_list.reduce(0) do |sum, n|
+  fib_sequence = fib(4000000)
+  fib_sequence.reduce(0) do |sum, n|
     n % 2 == 0 ? sum + n : sum
   end
 end
